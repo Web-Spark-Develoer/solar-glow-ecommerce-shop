@@ -7,7 +7,7 @@ import CartSidebar from './CartSidebar';
 import logo from '@/assets/logo.png';
 
 const Header = () => {
-  const { cartItems, isCartOpen, setIsCartOpen, updateQuantity, removeFromCart, clearCart, getTotalPrice } = useCart();
+  const { cartItems, isCartOpen, openCart, closeCart, updateQuantity, removeFromCart, clearCart, getCartTotal } = useCart();
   const cartItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
@@ -36,7 +36,7 @@ const Header = () => {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setIsCartOpen(true)}
+              onClick={openCart}
               className="relative"
             >
               <ShoppingCart className="w-4 h-4" />
@@ -52,12 +52,12 @@ const Header = () => {
       
       <CartSidebar 
         isOpen={isCartOpen}
-        onClose={() => setIsCartOpen(false)}
+        onClose={closeCart}
         cartItems={cartItems}
         onUpdateQuantity={updateQuantity}
-        onRemoveItem={removeFromCart}
+        onRemoveFromCart={removeFromCart}
         onClearCart={clearCart}
-        totalPrice={getTotalPrice()}
+        cartTotal={getCartTotal()}
       />
     </>
   );
