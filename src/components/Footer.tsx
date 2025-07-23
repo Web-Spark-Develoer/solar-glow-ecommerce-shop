@@ -15,7 +15,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <Sun className="h-8 w-8 text-accent" />
+              <img 
+                src="/lovable-uploads/5ddafeae-85d2-4112-9540-7a843f24341b.png" 
+                alt="UVC Solar" 
+                className="h-8 w-auto object-contain"
+              />
               <span className="text-2xl font-montserrat font-bold">UVC Solar</span>
             </div>
             <p className="text-white/80 font-inter leading-relaxed">
@@ -49,9 +53,9 @@ export default function Footer() {
             <ul className="space-y-4 font-inter">
               <li><a href="/" className="text-white/80 hover:text-accent transition-colors">Home</a></li>
               <li><a href="/shop" className="text-white/80 hover:text-accent transition-colors">Shop</a></li>
-              <li><a href="/about" className="text-white/80 hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="/financing" className="text-white/80 hover:text-accent transition-colors">Financing</a></li>
-              <li><a href="/contact" className="text-white/80 hover:text-accent transition-colors">Contact</a></li>
+              <li><a href="#about" className="text-white/80 hover:text-accent transition-colors">About Us</a></li>
+              <li><a href="#services" className="text-white/80 hover:text-accent transition-colors">Services</a></li>
+              <li><a href="#contact" className="text-white/80 hover:text-accent transition-colors">Contact</a></li>
             </ul>
           </div>
 

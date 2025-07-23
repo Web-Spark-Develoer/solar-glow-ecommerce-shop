@@ -42,10 +42,14 @@ const LiveChatWidget = () => {
   }, [messages]);
 
   const quickActions = [
-    { label: "Battery Specs", message: "Tell me about battery specifications and options" },
-    { label: "Inverter Options", message: "What inverter options do you have available?" },
-    { label: "Pricing", message: "Can you provide pricing information for solar systems?" },
-    { label: "Installation", message: "How does the installation process work?" }
+    { label: "🔋 Battery Specs", message: "Tell me about your battery specifications and available options for energy storage" },
+    { label: "⚡ Inverter Options", message: "What inverter options do you have? I need help choosing the right one for my system" },
+    { label: "💰 Get Quote", message: "I'd like to get a pricing quote for a complete solar system installation" },
+    { label: "🔧 Installation", message: "How does your installation process work? What's included in your service?" },
+    { label: "☀️ Solar Panels", message: "What types of solar panels do you offer? I want to know about efficiency and warranties" },
+    { label: "📊 System Size", message: "Help me calculate what size solar system I need for my home or business" },
+    { label: "📞 Schedule Call", message: "I'd like to schedule a consultation with one of your solar experts" },
+    { label: "❓ FAQ", message: "I have some general questions about solar energy and how it works" }
   ];
 
   const sendMessage = async (content: string) => {

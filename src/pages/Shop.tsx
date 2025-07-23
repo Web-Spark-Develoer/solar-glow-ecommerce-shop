@@ -71,8 +71,7 @@ export default function Shop() {
   }, [selectedCategory, searchQuery, sortBy]);
 
   const handleViewProduct = (product: Product) => {
-    // For now, we'll just scroll to the product or implement a modal
-    console.log('View product:', product);
+    window.location.href = `/product/${product.id}`;
   };
 
   return (

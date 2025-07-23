@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sun, Battery, Zap } from 'lucide-react';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroBackground from '/lovable-uploads/381af2a3-897a-475e-a48a-949306347fdf.png';
 
 const HeroSection = () => {
   return (

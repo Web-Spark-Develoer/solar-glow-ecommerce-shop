@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingCart } from 'lucide-react';
 import { useCart } from '@/hooks/useCart';
 import CartSidebar from './CartSidebar';
-import logo from '@/assets/logo.png';
+import logo from '/lovable-uploads/5ddafeae-85d2-4112-9540-7a843f24341b.png';
 
 const Header = () => {
   const { cartItems, isCartOpen, openCart, closeCart, updateQuantity, removeFromCart, clearCart, getCartTotal } = useCart();
